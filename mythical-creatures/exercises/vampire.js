@@ -11,7 +11,7 @@ class Vampire {
     this.ouncesDrank = 0
   }
 //might be a more elegant way to pass the I'm too full test
-  drink(){
+  drink() {
     this.thirsty = false
     if (this.ouncesDrank <= 40){
       this.ouncesDrank += 10

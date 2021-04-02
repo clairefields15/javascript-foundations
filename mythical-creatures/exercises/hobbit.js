@@ -1,6 +1,6 @@
 class Hobbit {
-  constructor(name){
-    this.name = name['name']
+  constructor(littleHobbit){
+    this.name = littleHobbit.name
     this.age = 0
     this.adult = false
     this.old = false

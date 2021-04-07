@@ -139,7 +139,8 @@ describe('Golfer', function () {
 
   it('should have their performance on a hole affect their frustration', function () {
 
-    // **NOTE: Scores below 0 are considered excellent, scores of even par (0) are good, scores above 0 are considered bad**
+    // **NOTE: Scores below 0 are considered excellent, scores of even par (0) are good,
+    //scores above 0 are considered bad**
 
     var golfer1 = new Golfer({ name: 'Zach', handicap: 18 });
 

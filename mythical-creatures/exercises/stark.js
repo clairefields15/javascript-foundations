@@ -1,3 +1,5 @@
+const Direwolf = require('./direwolf');
+
 class Stark {
   constructor(newStark) {
     this.name= undefined;
@@ -9,7 +11,7 @@ class Stark {
     if(newStark){
       this.location = newStark.area || 'Winterfell'
     }
-  }
+   }
 
   sayHouseWords() {
     if(!this.safe) {
@@ -19,8 +21,11 @@ class Stark {
   }
   }
 
-  callDirewolf() {
-    var wolf = new Direwolf()
+  callDirewolf(wolfName, wolfHome) {
+    var direwolf = new Direwolf(wolfName, wolfHome);
+    direwolf.home = this.location;
+    direwolf.protect(this)
+    return direwolf
   }
 
 }
